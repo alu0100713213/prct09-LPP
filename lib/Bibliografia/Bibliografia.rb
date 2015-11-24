@@ -1,5 +1,6 @@
 module Bibliografia
 	class Bibliografia
+		include Comparable
 	  attr_reader :tipo_pub, :autor, :titulo, :editorial, :num_edicion,
 	              :serie, :fecha_publicacion, :isbn,
 	              :isbn13
@@ -22,7 +23,7 @@ module Bibliografia
 	def SetAutor(valor)
 		@autor = valor
 	end
-		
+
 	  def SetTitulo(valor)
 	    @titulo = valor
 	  end
@@ -82,15 +83,14 @@ module Bibliografia
 	  def SetIsbn13(valor)
 	    @isbn13 = valor
 	  end
-	  
+
 	  def to_s(valor)
 	    "(#{@valor})"
    	  end
- 	  
+
 	  def PrintReference()
 	    @salida =  GetAutor() + "\n" + GetTitulo() + "\n" + "Editorial: " + GetEditorial() + "\n" + "Fecha de publicación: " + "{@fecha_publicacion}" + "\n" + "ISBN: " + "#{@isbn}" + "\n" +"Referencia: " + "#{@isbn13}" + "\n"
 	    @salida
-	  end	
+	  end
 	end
 end
-	

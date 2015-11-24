@@ -1,4 +1,5 @@
 module Bibliografia
+	include Enumerable
 	Node = Struct.new(:value, :next, :prev){
 		attr_accessor :prev
 	}
@@ -39,12 +40,10 @@ module Bibliografia
 		def each
 			aux = top
 			while aux != nil do
-			yield aux 
+			yield aux
 			aux = aux.next
 			end
 		end
 	end
 
 end
-
-
