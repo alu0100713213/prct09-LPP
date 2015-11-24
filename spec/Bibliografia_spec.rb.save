@@ -1,0 +1,56 @@
+require 'spec_helper'
+require 'Bibliografia'
+
+describe Bibliografia do
+
+#DECLARACIÓN DE LOS LIBROS
+	l1 = Bibliografia::Bibliografia.new('Libro', 'Dave Thomas, Andy Hunt, Chad Fowler', 'Programming Ruby 1.9 & 2.0: The Pragmatic Programmers Guide (The Facets of Ruby)', 'Pragmatic Bookshelf', '4 edition', '','July 7 2013', '978-1937785499', '1937785491')
+	l2 = Bibliografia::Bibliografia.new('Libro', 'Scott Chacon', 'Pro Git 2009th Edition', '(Pro) Apress', '2009 edition', '', 'August 27, 2009', '978-
+	1430218333', '1430218339')
+	l3 = Bibliografia::Bibliografia.new('Libro', 'David Flanagan, Yukihiro Matsumoto','The Ruby Programming Language', '(Pro) Apress', '1 edition', '', '(Fe-bruary 4, 2008)', '0596516177', '978-059651')
+	l4 = Bibliografia::Bibliografia.new('Libro', 'David Chelimsky, Dave Astels, Bryan Helmkamp, Dan North, Zach Dennis, Aslak Hellesoy', 'The RSpec Book: Behaviour Driven Development with RSpec, Cucumber, and Friends (The Facets of Ruby)', 'Pragmatic Bookshelf', '', '1 edition' ,'December 25, 2010' ,'1934356379', '978-1934356371')
+	l5 = Bibliografia::Bibliografia.new(''Libro', 'Richard E. Silverman', 'Git Pocket Guide','O’Reilly Media', '1 edition' , '', 'August 2, 2013', '1449325866', '978-1449325862')
+
+# Se inicializa un nodo con valor libro 1 y se añade a la lista 
+
+	nodo1 = Bibliografia::Node.new(l1,nil,nil)
+	nodo2 = Bibliografia::Node.new(l2,nil,nil)
+	nodo3 = Bibliografia::Node.new(l3,nil,nil)
+	nodo4 = Bibliografia::Node.new(l4,nil,nil)
+	milista = Bibliografia::Lista.new(nodo1)
+
+	context "Pruebas de la clase Nodo" do
+		it '# Prueba de la declaración de la clase nodo' do 
+			expect(nodo1).to respond_to(:value)
+			expect(nodo1.value).to eq(l1)	
+		end
+		it '# Debe existir un nodo de la lista con sus datos y su siguiente' do
+			expect(nodo1).to respond_to(:value)
+			expect(nodo1).to respond_to(:next)
+			expect(nodo1).to respond_to(:prev)
+		end
+	end
+	context "Prueba clase Lista" do
+		it '# Prueba de la declaración de la clase Lista' do
+			#expect(milista.top).to eq(nodo)
+		end
+		it '# Se puede insertar un elemento en la lista' do
+			expect(milista).to respond_to(:push)
+			milista.push(l1)
+		end
+		it '# Se puede insertar varios elementos en la lista' do
+			expect(milista).to respond_to(:push)
+			milista.push(nodo2)
+			milista.push(nodo3)
+		end
+		it '# Se puede extraer un elemento de la lista' do
+
+			aux1 = milista.pop()
+			aux1 = aux1.value
+			expect(aux1.GetTitulo).to eq('Programming Ruby 1.9 & 2.0: The Pragmatic Programmers Guide (The Facets of Ruby)')
+			expect(aux1.GetAutor).to eq('Dave Thomas, Andy Hunt, Chad Fowler')
+		end
+	end
+end
+
+
