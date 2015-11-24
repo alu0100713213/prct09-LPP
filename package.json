@@ -1,0 +1,15 @@
+{
+  "name": "prct09",
+  "version": "0.0.0",
+  "description": "En esta práctica realizaremos la bibliografia con una implementación de listas dobles. El lenguaje que usaremos sera Ruby. Para el desarrollo de la clase se utilizara una metodología de desarrollo dirigido por pruebas (TDD) y la herramienta RSpec.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:alu0100713213/prct09-lpp.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause"
+}
