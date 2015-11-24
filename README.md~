@@ -15,9 +15,7 @@ Para instalar la herramienta rspec se han usado los comandos:
 Para ejecutar los tests se hace un rake, ya que en el Rakefile hay una tarea que llama a la herramienta rspec.
     $ rake
 
-<p align="Center">
-	<img src=img/test_ok.jpg" title="Test Rspec" width="300" height="300">
-</p>
+![Alt text](img/test_ok.jpg "Test Rspec")
 
 ## Guard
 
