@@ -15,6 +15,7 @@ Para instalar la herramienta rspec se han usado los comandos:
 Para ejecutar los tests se hace un rake, ya que en el Rakefile hay una tarea que llama a la herramienta rspec.
     $ rake
 
+![Alt text](img/test_ok.jpg "Test Rspec")
 
 ## Guard
 
@@ -22,6 +23,10 @@ Para ejecutar guard en la práctica sirve simplemente con el comando:
     $ guard 
 
 Se ha seguido el directorio completo de la práctica.
+
+## Travis
+
+## Coveralls
 
 ## Autor y Asignatura
 

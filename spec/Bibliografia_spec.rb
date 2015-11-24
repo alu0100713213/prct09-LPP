@@ -15,14 +15,14 @@ describe Bibliografia do
 		@r2 = Bibliografia::Revista.new('Publicación Periodica', 'Artículo de Periodico', ' Javier Palazón / Laura Pajuelo ', 'El primer móvil con Android One', 'El Pais', '8889221', '16 Noviembre de 2015', '2929332', 'EAS-1447241991')
 		@r3 = Bibliografia::Articulo_Digital.new('Publicación Periodica', 'Documento electronico', 'Juan Carlos González', 'Yamaha está desarrollando un espectacular robot capaz de conducir motos de alta cilindrada', 'http://www.xataka.com/robotica-e-ia/yamaha-esta-desarrollando-un-espectacular-robot-capaz-de-conducir-motos-de-alta-cilindrada', '1', '28 de Octubre de 2015')
 
-	# Se inicializan nodos
+	# Se inicializan nodos, para las pruebas con los nodos
 
 		@nodo1 = Node.new(@l1,nil,nil)
 		@nodo2 = Node.new(@l2,nil,nil)
 		@nodo3 = Node.new(@l3,nil,nil)
 		@nodo4 = Node.new(@l4,nil,nil)
 
-	# Se inicializa la lista y pushea
+	# Se inicializa las listas y se pushean los libros
 
 		@milista = Bibliografia::Lista.new()
 		@milista1 = Bibliografia::Lista.new()
@@ -67,6 +67,8 @@ describe Bibliografia do
 		end
 
 	end
+
+	#   ----    PRÁCTICA 9   ----   #
 
 	describe ' PRUEBAS CON LA LISTA Y ENUMERABLE' do
 		it "Prueba para el metodo find" do	
@@ -115,5 +117,5 @@ describe Bibliografia do
  			expect(@l1 >= @l2).to eq(true)
 		end
 	end
-
+	#   ----    PRÁCTICA 9   ----   #
 end
