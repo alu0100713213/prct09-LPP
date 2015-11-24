@@ -16,6 +16,15 @@ module Bibliografia
 		@isbn = i
 		@isbn13 = r
 	end
+
+	def <=>(other)
+		@titulo <=> other.titulo
+	end
+
+	def ==(other)
+		@titulo == other.titulo
+	end
+
 	def GetAutor()
 		@autor
 	end

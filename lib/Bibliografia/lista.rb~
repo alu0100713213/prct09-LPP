@@ -28,10 +28,10 @@ module Bibliografia
 				@top = nodo
 				@tail = nodo
 			else
-				aux = @top
-				@top = nodo
-				@top.next = aux
-				@top.prev = @top
+				aux = @inicio
+				@inicio = nodo
+				@inicio.next = aux
+				@inicio.prev = @inicio
 			end
 		end
 
