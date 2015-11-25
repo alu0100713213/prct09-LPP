@@ -29,8 +29,10 @@ Se ha seguido el directorio completo de la práctica.
 ## Travis
 
 Para la práctica también se ha usado la herramienta Travis.
+<p align="Left">
+	<img src="https//travis-ci.org/alu0100713213/prct09-LPP.svg?branch=master" title="Test Rspec" width="380" height="260">
+</p>
 
-[![Build Status](https://travis-ci.org/alu0100713213/prct09-LPP.svg?branch=master)](https://travis-ci.org/alu0100713213/prct09-LPP)
 
 ## Coveralls
 
