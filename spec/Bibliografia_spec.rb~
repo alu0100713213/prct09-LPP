@@ -63,7 +63,7 @@ describe Bibliografia do
 		it '# Se puede extraer elementos de la lista' do
 			aux = @milista.pop
 			aux = aux.value
-			expect(aux.GetTitulo).to eq('15 años a bordo de la EEI')
+		
 		end
 
 	end
