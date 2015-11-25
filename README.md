@@ -16,7 +16,7 @@ Para ejecutar los tests se hace un rake, ya que en el Rakefile hay una tarea que
     $ rake
 
 <p align="Center">
-	<img src="img/test_ok.jpg" title="Test Rspec" width="300" height="300">
+	<img src="img/test_ok.jpg" title="Test Rspec" width="380" height="260">
 </p>
 
 ## Guard
